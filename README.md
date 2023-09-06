@@ -6,9 +6,9 @@ Create a script, without using Google API, in Node.js, that will log in to https
 
 ### What has been done:
 
-I created a script (program, application) that goes to Google Mail and extracts the number of unread emails from there.
+I created a script (program, application) that goes to Google Mail and extracts the number of unread emails.
 
-For readability, the program was divided into different parts, which is reflected in the file system. If the program is to be run as serverless-lambda-function, then everything can always be returned to one file.
+The program was divided into parts for readability, which is reflected in the file system. If the program is to be run as serverless-lambda-function, everything can always be returned to one file.
 
 For demonstration purposes, the program can be interacted via the CLI.
 
@@ -22,16 +22,16 @@ For demonstration purposes, the program can be interacted via the CLI.
 
 1. Install dependencies
 
-   > npm i
+   `npm i`
 
 2. Build application
 
-   > npm run build
+   `npm run build`
 
 3. Run command to fetch unread messages count
 
-   > node build/index get-unread-count -l "your_gmail_login" -p "your_gmail_password"
+   `node build/index get-unread-count -l "your_gmail_login" -p "your_gmail_password"`
 
    OR
 
-   > node build/index get-unread-count --password "your_gmail_password" --login "your_gmail_login"
+   `node build/index get-unread-count --password "your_gmail_password" --login "your_gmail_login"`
